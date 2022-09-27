@@ -49,9 +49,9 @@ section#login {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    transform: translate(-50%, -50%);
     background-color: white;
     transition: width 0.3s, height 0.3s;
+    transform: translate(-50%, -50%);
     transition-timing-function: ease;
 }
 
@@ -79,50 +79,31 @@ div > p {
     padding-bottom: 5px;
 }
 
-i#person {
-    color: white;
-    width: 100%;
-    height: 40px;
+label {
+    display: none;
+}
+
+div.campo {
     background-color: var(--cor02);
-    padding: 5px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-bottom: 5px;
+    margin: 5px 0px;
 }
 
-input#iemail {
-    height: 38px;
-    position: absolute;
-    width: 73%;
-    margin-top: 1px;
-    border-radius: 10px;
-    background-color:#60d1cd;
-    display: block;
-    margin-top: -45px;
-    margin-left: 45px;
-    padding: 5px;
+div.campo > input {
+    background-color: var(--cor01);
     font-size: 1em;
+    border: 0px;
+    border-radius: 8px;
+    width: calc(100% - 45px);
+    height: 38px;
+    padding: 4px;
+    margin-bottom: 3px;
 }
 
-i#chave {
+div.campo > i {
+    width: 40px;
+    font-size: 2em;
+    padding: 5px;
     color: white;
-    width: 100%;
-    height: 40px;
-    background-color: var(--cor02);
-    padding: 5px;
-    border-radius: 10px;
-}
-
-input#isenha {
-    height: 38px;
-    position: absolute;
-    width: 74%;
-    margin-top: -40px;
-    margin-left: 43px;
-    border-radius: 10px;
-    background-color:#60d1cd;
-    padding: 5px;
-    font-size: 1em;
 }
 
 input#entrar {
@@ -132,7 +113,6 @@ input#entrar {
     height: 40px;
     border-radius: 5px;
     color: white;
-    margin-top: 5px;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -153,6 +133,10 @@ a {
     text-align: center;
 }
 
+a:hover {
+    background-color: #60d1cd;
+}
+
 #mail {
-    display: inline-block;
+    font-size: 0.8em;
 }
