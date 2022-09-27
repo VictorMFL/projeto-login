@@ -1,16 +1,6 @@
 @charset "UTF-8";
 
 
-/* Typical Device Breakpoints
------------------------------
-pequenas telas: até 600px
-Celular: de 600px até  768px
-Tablet: de 768px até 992px
-Desktop:de 992px até 1200px
-TV: acima de 1200px.
-*/
-
-
 /*
     Paleta de cores
     Verde: #49a09d
@@ -26,7 +16,7 @@ TV: acima de 1200px.
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
 
@@ -52,48 +42,117 @@ section {
 section#login {
     box-shadow: 0px 0px 10px rgb(0 0 0 / 45%);
     width: 250px;
+    height: 515px;
     position: absolute;
+    border-radius: 20px;
+    display: block;
     top: 50%;
     left: 50%;
+    overflow: hidden;
     transform: translate(-50%, -50%);
     background-color: white;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
-div > img {
+div#imagem {
+    background-image: url(../imagens/img-login.jpg);
     background-position: center top;
     height: 200px;
     width: 250px;
     background-size: cover;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    display: block;
 }
 
 div#formulario {
     padding: 10px;
-    height: 350px;
+    display: block;
 }
 
 div > h1 {
     text-align: center;
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
 div > p {
     font-size: 0.8em;
+    padding-bottom: 5px;
 }
 
-i{
+i#person {
     color: white;
-}
-
- form {
+    width: 100%;
+    height: 40px;
     background-color: var(--cor02);
-    width: 230px;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-input {
-    width: 181px;
+input#iemail {
+    height: 38px;
+    position: absolute;
+    width: 73%;
+    margin-top: 1px;
+    border-radius: 10px;
+    background-color:#60d1cd;
+    display: block;
+    margin-top: -45px;
+    margin-left: 45px;
     padding: 5px;
+    font-size: 1em;
+}
+
+i#chave {
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor02);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input#isenha {
+    height: 38px;
+    position: absolute;
+    width: 74%;
+    margin-top: -40px;
+    margin-left: 43px;
+    border-radius: 10px;
+    background-color:#60d1cd;
+    padding: 5px;
+    font-size: 1em;
+}
+
+input#entrar {
+    background-color: var(--cor01);
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input#entrar:hover {
+    background-color: #214b49;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color:var(--cor01) ;
+    border: 1px solid #49a09d;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#mail {
+    display: inline-block;
 }
